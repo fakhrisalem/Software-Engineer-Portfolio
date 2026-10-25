@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d10">
+  <meta name="description"
+    content="Mostafa Salem — software engineer from Egypt building clear, accessible and memorable web experiences.">
+  <title>Mostafa Salem — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js'); try { document.documentElement.dataset.theme = localStorage.getItem('ms-theme') || 'dark' } catch (e) { }</script>
+</head>
+
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="logo" href="#home">ms<b>.</b></a>
+      <div class="links" id="links"><a href="#about">About</a><a href="#services">Services</a><a
+          href="#skills">Skills</a><a href="#projects">Work</a><a href="#process">Process</a><a
+          href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+      <div class="tools"><a id="cvTop" class="nav-cv" href="#about">Download CV <span
+            aria-hidden="true">↓</span></a><button id="theme" class="pill" type="button"
+          aria-label="Toggle theme">◐</button><button id="menu" class="pill menu" type="button" aria-label="Menu"
+          aria-expanded="false">☰</button></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <canvas id="net" aria-hidden="true"></canvas><canvas id="gl" aria-hidden="true"></canvas>
+      <div class="htxt">
+        <p class="tag"><span class="dot"></span> Available for opportunities · Cairo, Egypt</p>
+        <h1>Mostafa<br>Salem<span class="accent">.</span></h1>
+        <p class="role">Software engineer crafting <em>clear</em>, <em>accessible</em> and <em>memorable</em> web
+          experiences.</p>
+        <p class="typed">I build <b id="typed"></b><i class="caret"></i></p>
+        <div class="cta"><a class="btn primary" href="#projects">See my work →</a><a class="btn" href="#contact">Get in
+            touch</a><a class="btn" id="cv" href="#" hidden>Download CV ↓</a></div>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div class="hart" aria-hidden="true"><span class="lb t"><i class="dot"></i> ENGINEER.EXE</span><span
+          class="lb r">&lt;/&gt; 01</span><svg viewBox="0 0 400 470" role="img"
+          aria-label="Anime-style illustration of an engineer coding with headphones">
+          <defs>
+            <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#6d5dfc" />
+              <stop offset="1" stop-color="#22d3ee" />
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="235" r="172" fill="var(--ac)" opacity=".14" />
+          <circle cx="200" cy="235" r="192" fill="none" stroke="var(--ac)" stroke-dasharray="3 9" opacity=".55" />
+          <g class="fl">
+            <rect x="292" y="96" width="102" height="74" rx="12" fill="#12141c" stroke="var(--ac)" stroke-width="2" />
+            <rect x="304" y="110" width="44" height="6" rx="3" fill="var(--ac)" />
+            <rect x="314" y="124" width="62" height="6" rx="3" fill="#8b8fa3" />
+            <rect x="314" y="138" width="38" height="6" rx="3" fill="var(--ac2)" />
+            <rect x="304" y="152" width="54" height="6" rx="3" fill="#8b8fa3" />
+          </g>
+          <g class="fl d2">
+            <rect x="14" y="140" width="64" height="40" rx="12" fill="var(--ac2)" /><text x="46" y="167"
+              text-anchor="middle" font-family="DM Mono,monospace" font-weight="500" font-size="20"
+              fill="#fff">&lt;/&gt;</text>
+          </g>
+          <g class="fl d3" fill="var(--ac)">
+            <path d="M52 300l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" />
+            <path d="M350 250l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="var(--ac2)" />
+          </g>
+          <path d="M58 470C58 378 112 340 200 340s142 38 142 130z" fill="#1d2230" />
+          <path d="M150 340c10 34 90 34 100 0" fill="none" stroke="#0f121b" stroke-width="14" stroke-linecap="round" />
+          <path d="M176 360v44M224 360v44" stroke="var(--ac)" stroke-width="4" stroke-linecap="round" />
+          <circle cx="176" cy="408" r="5" fill="var(--ac)" />
+          <circle cx="224" cy="408" r="5" fill="var(--ac)" />
+          <rect x="178" y="285" width="44" height="62" rx="16" fill="#eec29b" />
+          <path d="M178 322c14 14 30 16 44 0v-14h-44z" fill="#d9a67e" />
+          <ellipse cx="121" cy="228" rx="12" ry="19" fill="#f6d3b3" />
+          <ellipse cx="279" cy="228" rx="12" ry="19" fill="#f6d3b3" />
+          <ellipse cx="200" cy="218" rx="79" ry="90" fill="#f8d9bb" />
+          <path d="M118 222C102 128 146 82 206 82c64 0 96 50 76 140-6-48-30-80-78-82-50 2-74 34-86 82z"
+            fill="#1b1f3a" />
+          <path d="M128 126L108 66l52 34 12-52 30 48 34-52 6 56 46-38-10 66z" fill="#1b1f3a" />
+          <path d="M124 178c32-20 58-26 82-62 8 34 36 40 74 62-28-12-52-8-74-26-24 20-50 18-82 26z" fill="#1b1f3a" />
+          <path d="M150 112c20-8 38-8 52-2" fill="none" stroke="var(--ac)" stroke-width="5" stroke-linecap="round"
+            opacity=".9" />
+          <path d="M112 222C102 96 298 96 288 222" fill="none" stroke="var(--ac)" stroke-width="9"
+            stroke-linecap="round" />
+          <rect x="104" y="214" width="24" height="54" rx="11" fill="var(--ac)" />
+          <rect x="272" y="214" width="24" height="54" rx="11" fill="var(--ac)" />
+          <g class="blink">
+            <ellipse cx="169" cy="226" rx="16" ry="20" fill="#fff" />
+            <ellipse cx="169" cy="229" rx="12" ry="16" fill="url(#iris)" />
+            <ellipse cx="169" cy="230" rx="6" ry="9" fill="#10121c" />
+            <circle cx="164" cy="222" r="4.5" fill="#fff" />
+            <circle cx="174" cy="236" r="2" fill="#fff" />
+            <ellipse cx="231" cy="226" rx="16" ry="20" fill="#fff" />
+            <ellipse cx="231" cy="229" rx="12" ry="16" fill="url(#iris)" />
+            <ellipse cx="231" cy="230" rx="6" ry="9" fill="#10121c" />
+            <circle cx="226" cy="222" r="4.5" fill="#fff" />
+            <circle cx="236" cy="236" r="2" fill="#fff" />
+          </g>
+          <path d="M150 214c8-12 28-14 38-2M212 212c10-12 30-10 38 2" fill="none" stroke="#10121c" stroke-width="4"
+            stroke-linecap="round" />
+          <rect x="144" y="202" width="52" height="50" rx="17" fill="#fff" opacity=".12" stroke="#11131c"
+            stroke-width="3.5" />
+          <rect x="204" y="202" width="52" height="50" rx="17" fill="#fff" opacity=".12" stroke="#11131c"
+            stroke-width="3.5" />
+          <path d="M196 222q4-5 8 0M144 220l-18-4M256 220l18-4" stroke="#11131c" stroke-width="3.5" fill="none"
+            stroke-linecap="round" />
+          <path d="M130 188q18-14 40-8M270 188q-18-14-40-8" fill="none" stroke="#1b1f3a" stroke-width="5"
+            stroke-linecap="round" />
+          <ellipse cx="156" cy="262" rx="11" ry="6" fill="#ff8a8a" opacity=".4" />
+          <ellipse cx="244" cy="262" rx="11" ry="6" fill="#ff8a8a" opacity=".4" />
+          <path d="M200 248l-3 8h6" fill="none" stroke="#c98d6a" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M184 270q16 14 32 0" fill="none" stroke="#b5584a" stroke-width="3.5" stroke-linecap="round" />
+          <path d="M190 272q10 8 20 0z" fill="#fff" opacity=".8" />
+          <rect x="104" y="378" width="192" height="96" rx="10" fill="#2b3042" stroke="#3a4059" stroke-width="2" />
+          <circle cx="200" cy="426" r="15" fill="var(--ac)" />
+          <circle cx="200" cy="426" r="6" fill="#2b3042" />
+          <ellipse cx="148" cy="380" rx="26" ry="14" fill="#f8d9bb" />
+          <ellipse cx="252" cy="380" rx="26" ry="14" fill="#f8d9bb" />
+        </svg></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div id="marquee"></div>
+    </div>
+
+    <section class="wrap sec" id="about">
+      <p class="num">01 — About</p>
+      <div class="about">
+        <h2>Good software starts with <span class="accent">good questions.</span></h2>
+        <div class="prose">
+          <p class="about-lead">I’m an engineer from Egypt with a background at Ain Shams University. I like the space
+            where <span class="about-highlight">careful engineering</span> meets <span class="about-highlight">everyday
+              usefulness</span> — breaking complex problems into <span class="about-highlight">clear steps</span> and
+            shipping interfaces that <span class="about-highlight">feel as good as they work</span>.</p>
+          <p class="about-focus">My focus is frontend development, accessible design and creative coding.</p>
+          <ul class="chips">
+            <li>Frontend engineering</li>
+            <li>Human-centered UI</li>
+            <li>Creative coding</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="services">
+      <p class="num">02 — Services</p>
+      <h2>What I can <span class="accent">build for you.</span></h2>
+      <div class="bento g2" id="svc"></div>
+    </section>
+
+    <section class="wrap sec" id="skills">
+      <div class="skhead">
+        <div>
+          <p class="num">03 — Skills</p>
+          <h2>Tools I build with.</h2>
+        </div>
+        <div class="scene" aria-hidden="true">
+          <div class="cube">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>Git</span><span>Figma</span><span>UI</span></div>
+        </div>
+      </div>
+      <div class="bento" id="bento"></div>
+    </section>
+
+    <section class="wrap sec" id="projects">
+      <p class="num">04 — Selected work</p>
+      <h2>Ideas made <span class="accent">tangible.</span></h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="wrap sec" id="process">
+      <p class="num">05 — Process</p>
+      <h2>How I <span class="accent">work.</span></h2>
+      <ol class="steps" id="steps"></ol>
+    </section>
+
+    <section class="wrap sec" id="experience">
+      <p class="num">06 — The path</p>
+      <h2>Experience &amp; education.</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="wrap sec" id="faq">
+      <p class="num">07 — FAQ</p>
+      <h2>Good to <span class="accent">know.</span></h2>
+      <div class="faq" id="faqList"></div>
+    </section>
+
+    <section class="wrap sec contact" id="contact">
+      <p class="num">08 — Contact</p>
+      <h2>Have something good<br>in mind? <span class="accent">Let’s talk.</span></h2>
+      <form id="form" class="form">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label class="full">Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn primary" type="submit">Send message →</button>
+        <p class="note" id="note"></p>
+      </form>
+      <nav class="about-socials contact-socials" id="contactSocials" aria-label="Social media links"></nav>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="#home">ms<b>.</b></a>
+        <p>Building thoughtful, accessible experiences for the web.</p>
+        <a class="footer-cv" id="footerCv" href="#about">Download CV <span aria-hidden="true">↓</span></a>
+      </div>
+      <nav class="footer-pages" aria-label="Footer navigation">
+        <h2>Explore</h2>
+        <div class="footer-page-links">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a
+            href="#skills">Skills</a><a href="#projects">Work</a><a href="#process">Process</a><a
+            href="#experience">Experience</a><a href="#faq">FAQ</a><a
+            href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="footer-connect">
+        <h2>Connect</h2>
+        <nav class="about-socials footer-socials" id="footerSocials" aria-label="Social media links"></nav>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> Mostafa Salem</span><a href="#home">Back to top
+        ↑</a></div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script>setTimeout(function () { if (!window.__ok) document.querySelectorAll(".rv").forEach(function (n) { n.classList.add("in") }) }, 2500)</script>
+</body>
+
+</html>
